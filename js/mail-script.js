@@ -4,10 +4,28 @@
         var form = $('#myForm'); // contact form
         var submit = $('.submit-btn'); // submit button
         var alert = $('.alert-msg'); // alert div for show alert message
+                
+        //hide spinneer
+        $(document).ready(function(){
+            setTimeout(function(){
+                $('.spinner').addClass('hide');
+                $('.site-wrap').removeClass('hide');
+            }, 3000);
+        });
 
         // form submit event
         form.on('submit', function(e) {
             e.preventDefault(); // prevent default form submit
+
+        //hide spinner
+            $(document).ready(function(){
+                setTimeout(function(){
+                    $('.spinner').addClass('hide');
+                    $('.site-wrap').removeClass('hide');
+                }, 3000);
+                $('spinner')
+            });
+
 
             $.ajax({
                 url: 'mail.php', // form action url

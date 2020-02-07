@@ -17,6 +17,7 @@
         form.on('submit', function(e) {
             e.preventDefault(); // prevent default form submit
 
+
         //hide spinner
             $(document).ready(function(){
                 setTimeout(function(){
